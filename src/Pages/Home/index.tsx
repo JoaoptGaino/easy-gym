@@ -3,11 +3,13 @@ import { Button, KeyboardAvoidingView, Platform, Text, View } from 'react-native
 import { FontAwesome as Icon } from '@expo/vector-icons'
 import { RectButton } from 'react-native-gesture-handler';
 import styles from './styles';
+import { useNavigation } from '@react-navigation/native';
 
 
 const Home = () => {
+    const navigation=useNavigation();
     function navigateToExercises() {
-        alert("OI");
+        navigation.navigate('Exercises');
     }
     return (
         <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>

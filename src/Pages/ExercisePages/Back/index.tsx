@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text } from 'react-native';
+import Exercise from '../../../Components/Exercise';
 import PageHeader from '../../../Components/PageHeader';
 import api from '../../../Services/api';
 import styles from '../../Home/styles';
+
+
 
 function Back() {
     const [exercises, setExercises] = useState([]);
@@ -17,9 +20,7 @@ function Back() {
             <PageHeader title="Back" goto="Exercises" />
             <View style={styles.container}>
                 {exercises.map(exer => (
-                    <View>
-                        <Text>{exer.name}</Text>
-                    </View>
+                        <Exercise Muscle={exer}/>
                 ))}
             </View>
         </>

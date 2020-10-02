@@ -1,12 +1,36 @@
-import React from 'react';
-import {View,Text} from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { View, Text, Button } from 'react-native';
+import { RectButton, ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
+import MuscleType from '../../Components/MuscleType';
+import PageHeader from '../../Components/PageHeader';
+import api from '../../Services/api';
 import styles from './styles';
 
 
-const Exercises = () =>{
-    return(
+const Exercises = () => {
+    const [exercises, setExercises] = useState([]);
+
+    useEffect(() => {
+        api.get('exercises')
+            .then(response => {
+                setExercises(response.data.Back);
+                console.log(exercises);
+            })
+    }, []);
+    async function pressed() {
+        const exer = await exercises;
+        console.log(exer);
+    }
+
+    return (
         <View style={styles.container}>
-            <Text>Exercises</Text>
+            <PageHeader title="Your muscles" goto="Home"/>
+            <ScrollView style={styles.muscleList} contentContainerStyle={{
+                paddingHorizontal: 16,
+                paddingBottom: 16
+            }}>
+                <MuscleType name="Back" goto="Back"/>
+            </ScrollView>
         </View>
     );
 }

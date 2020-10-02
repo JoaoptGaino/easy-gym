@@ -4,6 +4,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import Home from './Pages/Home';
 import Exercises from './Pages/Exercises';
+import Back from './Pages/ExercisePages/Back';
 
 const AppStack = createStackNavigator();
 
@@ -15,6 +16,7 @@ const Routes = () =>{
             screenOptions={{cardStyle:{backgroundColor:'#f0f0f5'}}}>
                 <AppStack.Screen name="Home" component={Home}/>
                 <AppStack.Screen name="Exercises" component={Exercises}/>
+                <AppStack.Screen name="Back" component={Back}/>
             </AppStack.Navigator>
         </NavigationContainer>
     );

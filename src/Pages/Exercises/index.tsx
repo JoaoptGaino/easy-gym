@@ -24,12 +24,21 @@ const Exercises = () => {
 
     return (
         <View style={styles.container}>
-            <PageHeader title="Your muscles" goto="Home"/>
+            <PageHeader title="Your muscles" goto="Home" />
             <ScrollView style={styles.muscleList} contentContainerStyle={{
                 paddingHorizontal: 16,
                 paddingBottom: 16
             }}>
-                <MuscleType name="Back" goto="Back"/>
+                <View style={styles.itemsContainer}>
+                    <MuscleType name="Back" goto="Back" />
+                    <MuscleType name="Back" goto="Back" />
+                    <MuscleType name="Back" goto="Back" />
+                </View>
+                <View style={styles.itemsContainer}>
+                    <MuscleType name="Back" goto="Back" />
+                    <MuscleType name="Back" goto="Back" />
+                    <MuscleType name="Back" goto="Back" />
+                </View>
             </ScrollView>
         </View>
     );

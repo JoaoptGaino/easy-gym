@@ -31,13 +31,13 @@ const Exercises = () => {
             }}>
                 <View style={styles.itemsContainer}>
                     <MuscleType name="Back" goto="Back" />
-                    <MuscleType name="Back" goto="Back" />
-                    <MuscleType name="Back" goto="Back" />
+                    <MuscleType name="Chest" goto="Chest" />
+                    <MuscleType name="Shoulder" goto="Back" />
                 </View>
                 <View style={styles.itemsContainer}>
-                    <MuscleType name="Back" goto="Back" />
-                    <MuscleType name="Back" goto="Back" />
-                    <MuscleType name="Back" goto="Back" />
+                    <MuscleType name="Legs" goto="Back" />
+                    <MuscleType name="Abs" goto="Back" />
+                    <MuscleType name="Biceps and triceps" goto="Back" />
                 </View>
             </ScrollView>
         </View>

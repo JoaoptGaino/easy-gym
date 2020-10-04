@@ -2,7 +2,7 @@
 This is a mobile app created with React Native, that shows you some exercises according to the muscle you will be training.
 
 # 📸The app
-
+![alt text](https://ibb.co/Q6QkyFw)
 
 # 📱Usage
 

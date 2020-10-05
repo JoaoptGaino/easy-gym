@@ -2,17 +2,17 @@
 This is a mobile app created with React Native, that shows you some exercises according to the muscle you will be training.
 
 # 📸The app
-Home Page:
+
+## Home Page
 <img src="https://i.ibb.co/Vv9xfW4/Screenshot-1601838537.png" height="300">
+## Muscles
+<img src="https://i.ibb.co/9GFV9j5/Screenshot-1601838542.png" height="300">
 
-Muscles:
-<img src=“https://i.ibb.co/9GFV9j5/Screenshot-1601838542.png” height="300">
+## Exercises
+<img src="https://i.ibb.co/RDNxSgG/Screenshot-1601838551.png" height="300">
 
-Exercises:
-<img src=“https://i.ibb.co/RDNxSgG/Screenshot-1601838551.png” height="300">
-
-How to do:
-<img src=“https://i.ibb.co/92sJ2H0/Screenshot-1601838556.png” height="300">
+## How to do
+<img src="https://i.ibb.co/92sJ2H0/Screenshot-1601838556.png" height="300">
 
 # 🛠Technologies
 The project was developed with these technologies:
